@@ -13,5 +13,5 @@
     <string name="label_trailer">Trailer</string>
     <string name="label_review">Reviews</string>
 
-    <string name="api_key">YOUR_API_KEY </string>
+    <string name="api_key">YOUR_API_KEY</string>
 </resources>
