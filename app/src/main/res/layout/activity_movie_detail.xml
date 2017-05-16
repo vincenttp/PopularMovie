@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/activity_movie_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="id.vincenttp.popularmovie.view.activity.MovieDetail">
+        <RelativeLayout
+            android:id="@+id/cont_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingLeft="16dp"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_below="@+id/movie_title"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/movie_sinopsis"
+                android:layout_below="@+id/movie_title"
+                android:layout_toRightOf="@+id/movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:id="@+id/movie_vote"
+                android:layout_below="@+id/movie_sinopsis"
+                android:layout_toRightOf="@+id/movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/movie_date"
+                android:layout_below="@+id/movie_vote"
+                android:layout_toRightOf="@+id/movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btn_fav"
+                android:layout_below="@+id/movie_sinopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/btn_fav"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/label_trailer"
+            android:layout_below="@+id/cont_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/label_trailer"
+            android:textSize="20sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_trailer"
+            android:layout_below="@+id/label_trailer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label_review"
+            android:layout_below="@+id/list_trailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/label_review"
+            android:textSize="20sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_review"
+            android:layout_below="@+id/label_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>

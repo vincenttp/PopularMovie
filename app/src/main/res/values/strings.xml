@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PopularMovie</string>
+    <string name="title_top">Top Rated Movie</string>
+    <string name="title_fav">My Favorite Movie</string>
+    <string name="label_detail">MovieDetail</string>
+
+    //menu
+    <string name="menu_popular">Popular</string>
+    <string name="menu_rated">Top Rated</string>
+    <string name="menu_fav">Favorite Movie</string>
+
+    <string name="btn_fav">Favorite</string>
+    <string name="label_trailer">Trailer</string>
+    <string name="label_review">Reviews</string>
+
+    <string name="api_key">YOUR_API_KEY</string>
+</resources>
